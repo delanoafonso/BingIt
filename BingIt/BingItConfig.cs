@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
 
 namespace BingIt
 {
@@ -16,5 +17,7 @@ namespace BingIt
         public int WaitAfterClick { get; set; }
 
         public List<Url> Urls { get; set; }
+
+        public string BingSearchUrl { get; set; }
     }
 }

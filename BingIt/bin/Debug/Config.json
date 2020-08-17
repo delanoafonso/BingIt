@@ -2,6 +2,7 @@
 	"EdgeName": "microsoft-edge:",
 	"EdgeProcessName": "msedge",
 	"WaitAfterClick": 1,
+	"BingSearchUrl": "https://www.bing.com/news/search?q=",
 	"Urls": [
 		{ "Link": "https://www.bing.com/news/search?q=real+estate&cf=intr&FORM=NSINTR" },
 		{ "Link": "https://www.bing.com/news/search?q=saving+%26+investing&cf=intr&FORM=NSINTR" },

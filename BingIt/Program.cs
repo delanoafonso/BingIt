@@ -37,6 +37,13 @@ namespace BingIt
                 foreach (var url in config?.Urls)
                     Launch(config?.EdgeName, url.Link, config.WaitAfterClick);
                 TerminateMsEdge(config?.EdgeProcessName);
+
+                for (int i = 1; i <= 30; i++)
+                {
+                    // Search base on random GUID.
+                    Launch(config?.EdgeName, config.BingSearchUrl + Guid.NewGuid().ToString(), config.WaitAfterClick);
+                }
+                TerminateMsEdge(config?.EdgeProcessName);
             }
         }
 
